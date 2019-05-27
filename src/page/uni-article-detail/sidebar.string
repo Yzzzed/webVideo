@@ -1,0 +1,7 @@
+<div class="affix">
+    <ul class="list-group">
+        {{#list}}
+        <a href="#" class="list-group-item">{{category}}</a>
+        {{/list}}
+    </ul>
+</div>

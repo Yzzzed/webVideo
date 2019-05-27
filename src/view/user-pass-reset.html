@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%= require('html-loader!./layout/html-head.html') %>
+        <title><%= htmlWebpackPlugin.options.title %> - webTop</title>
+        <script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    </head>
+<body>
+    <%= require('html-loader!./layout/nav-simple.html') %>
+    <div class="page-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="user-con col-md-4 col-md-offset-4">
+                    <div class="user-title">找回密码</div>
+                    <div class="user-box row">
+                        <div class="error-item">
+                            <i class="fa fa-minus-circle error-icon"></i>
+                            <p class="err-msg">Error</p>
+                        </div>
+                        <div class="input-group step-con step-username col-md-6 col-md-offset-3">
+                            <p class="user-item-text row">请输入用户名：</p>
+                            <div class="user-item input-group row">
+                                <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                                <input type="text" class="form-control" id="username" placeholder="请输入用户名" autocomplete="off">
+                            </div>
+                            <button class="btn btn-submit" id="submit-username">下一步</button>
+                        </div>
+                        <div class="input-group step-con step-validateCode col-md-6 col-md-offset-3">
+                            <p class="user-item-text row">请输入绑定邮箱收到的验证码：</p>
+                            <div class="user-item input-group row">
+                                <span class="input-group-addon"><i class="fa fa-shield fa-fw"></i></span>
+                                <input type="text" class="form-control" id="validateCode" placeholder="请输入验证码" autocomplete="off">
+                            </div>
+                            <button class="btn btn-submit" id="submit-username">下一步</button>
+                        </div>
+                        <div class="link-item">
+                            <a href="./user-login.html" class="link" target="_blank">返回登录>></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>            
+    <%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>

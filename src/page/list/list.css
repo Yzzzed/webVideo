@@ -1,0 +1,31 @@
+body{
+    position: relative;
+    z-index: -5;
+}
+.container-fluid{
+    position: relative;
+    z-index: -4;
+}
+.hot-list{
+    position: relative;
+    z-index: -3;
+}
+.hot-list .panel{
+    position: relative;
+    z-index: -2;
+}
+.article-msg{
+    display: flex;
+    align-items: center;
+}
+.article-msg > div{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 10px;
+    /* flex: 1 1; */
+    display: flex;
+    /* justify-content: space-between; */
+}
+.time{
+    margin-left: auto;
+}

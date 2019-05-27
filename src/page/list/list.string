@@ -1,0 +1,17 @@
+<div class="list-group">
+    {{#list}}
+    <a href="./uni-article-detail.html?id={{id}}" class="list-group-item">
+        <h3>{{title}}</h3>
+        <p>{{content}}...</p>
+        <div class="article-msg">
+            <div class="author">{{author}}</div>
+            <div class="time">{{updateTime}}</div>
+        </div>
+    </a>
+    {{/list}}
+    {{^list}}
+    <a href="" class="list-group-item">
+        <p class="err-tips">没有您的搜索结果~</p>
+    </a>
+    {{/list}}
+</div>

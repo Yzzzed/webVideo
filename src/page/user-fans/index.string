@@ -1,0 +1,13 @@
+<div class="list-group">
+    {{#list}}
+    <a class="list-group-item clearfix" data-username="{{username}}">
+        <h4>{{username}}</h4>
+        <div class="operation-list pull-right">
+            <button class="btn btn-info follow">关注</button>
+        </div>
+    </a>
+    {{/list}}
+    {{^list}}
+    <p class="err-tips">还没人关注你嗷~</p>
+    {{/list}}
+</div>

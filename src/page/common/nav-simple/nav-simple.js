@@ -1,0 +1,1 @@
+import './nav-simple.css'

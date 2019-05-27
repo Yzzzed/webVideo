@@ -1,0 +1,43 @@
+.container-fluid{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+.flex-box{
+    display: flex;
+    flex-flow: column;
+}
+.top{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 30px;
+    background: #fff;
+    box-shadow: 0 5px 10px #ccc;
+}
+.top .btn-group .btn{
+    padding: 10px 20px;
+    margin: 0 20px;
+}
+.editor-con{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.editor-con .title-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.title-con .title-span{
+    padding: 0 10px;
+}
+.title-con .title{
+    width: 500px;
+}
+.form-control:focus {
+    border-color: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    outline: none !important;
+}

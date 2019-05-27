@@ -1,0 +1,19 @@
+<div class="list-group">
+    {{#list}}
+    <a class="list-group-item clearfix article-item" data-id="{{id}}" href="./article-detail.html?id={{id}}">
+        <h4>{{title}}</h4>
+        <p>{{content}}...</p>
+        <div class="article-msg">
+            <div class="time">{{updateTime}}</div>
+            <div class="operation-list">
+                <button class="btn btn-info update">编辑</button>
+                <button class="btn btn-info delete">删除</button>
+            </div>
+        </div>
+    </a>
+    {{/list}}
+    {{^list}}
+    <p class="err-tips">你还没有发表过文章嗷~</p>
+    {{/list}}
+</div>
+<!-- href="./article-detail.html?id={{id}}" -->

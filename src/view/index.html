@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- You should import html-head from layout/ here -->
+    <%= require('html-loader!./layout/html-head.html') %>
+    <!-- ********************************************* -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= htmlWebpackPlugin.options.title %> - webTop</title>
+</head>
+<body>
+    <%= require('html-loader!./layout/header.html') %>
+    <div class="container-fluid">
+        <!-- <div class="row"> -->
+            <div class="side-bar col-md-1">
+                <div class="affix">
+                    <ul class="list-group">
+                        <a href="./list.html?keyword=Javascript" class="list-group-item">Javascript</a>
+                        <a href="./list.html?keyword=Html5" class="list-group-item">Html5</a>
+                        <a href="./list.html?keyword=CSS3" class="list-group-item">CSS3</a>
+                        <a href="./list.html?keyword=NodeJS" class="list-group-item">NodeJS</a>
+                        <a href="./list.html?keyword=Java" class="list-group-item">Java</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="hot-list col-md-10 clearfix">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h4>最新发表</h4>
+                    </div>
+                    <div class="panel-body">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="slider-bar col-md-1">
+                <div class="affix">
+                    <ul class="list-group">
+                        <!-- <a href="#" class="list-group-item">分类1分类1分类1分类1分类1分类1分类1</a>
+                        <a href="#" class="list-group-item">分类2</a>
+                        <a href="#" class="list-group-item">分类3</a>
+                        <a href="#" class="list-group-item">分类4</a>
+                        <a href="#" class="list-group-item">分类5</a> -->
+                        
+                    </ul>
+                </div>
+            </div>
+        <!-- </div> -->
+    </div>
+    <%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>

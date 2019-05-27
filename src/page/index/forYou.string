@@ -1,0 +1,23 @@
+<div class="list-group">
+    {{#list}}
+    <div class="list-group-item">
+        <a href="./uni-article-detail.html?id={{id}}">
+            <h3>{{title}}</h3>
+            <p>{{content}}...</p>
+        </a>   
+        <div class="article-msg">
+            <!-- <div class="author">{{user}}</div> -->
+            <div class="time">{{updateTime}}</div>
+            <!-- <div class="operation-btn">
+                <span class="btn btn-info like">点赞</span>
+                <span class="btn btn-info collect">收藏</span>
+            </div> -->
+        </div>
+    </div>
+    {{/list}}
+    {{^list}}
+    <a class="list-group-item">
+        <p>加载失效，请刷新~</p>
+    </a>
+    {{/list}}
+</div>

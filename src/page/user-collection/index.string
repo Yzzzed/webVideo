@@ -1,0 +1,17 @@
+<div class="list-group">
+    {{#list}}
+    <a class="list-group-item clearfix article-item" data-id="{{id}}" href="./uni-article-detail.html?id={{id}}">
+        <h4>{{title}}</h4>
+        <p>{{content}}...</p>
+        <div class="article-msg">
+            <div class="time">{{updateTime}}</div>
+            <div class="operation-list">
+                <button class="btn btn-info uncollection">取消收藏</button>
+            </div>
+        </div>
+    </a>
+    {{/list}}
+    {{^list}}
+    <p class="err-tips">你的收藏为空~</p>
+    {{/list}}
+</div>

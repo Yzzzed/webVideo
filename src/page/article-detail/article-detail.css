@@ -1,0 +1,44 @@
+body{
+    position: relative;
+    z-index: -5;
+}
+.container-fluid{
+    position: relative;
+    z-index: -4;
+}
+.detail-con{
+    position: relative;
+    z-index: -3;
+}
+
+.panel-heading{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.panel-heading h4{
+    text-align: center;
+}
+.panel-heading .all-msg{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.all-msg .article-msg{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 3;
+}
+.author, .time{
+    padding: 5px 20px;
+    text-align: center;
+    align-self: flex-start;
+    flex: 1;
+}
+.all-msg .btn-group{
+    margin-left: auto;
+}

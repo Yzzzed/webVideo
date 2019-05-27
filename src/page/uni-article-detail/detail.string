@@ -1,0 +1,31 @@
+<!-- <div class="panel panel-warning">
+    <div class="panel-heading">
+        <h4>{{title}}</h4>
+        <div class="all-msg">
+            <div class="article-msg">
+                <div class="author">author: {{user}}{{error}}</div>
+                <div class="time">time: {{updateTime}}</div>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-warning">关注</button>
+                <button class="btn btn-warning">点赞</button>
+                <button class="btn btn-warning">收藏</button>
+            </div>
+        </div>
+    </div>
+    <div class="panel-body" id="con">
+        
+    </div>
+</div> -->
+<h4>{{title}}</h4>
+<div class="all-msg">
+    <div class="article-msg">
+        <div class="author">author: {{user}}</div>
+        <div class="time">time: {{updateTime}}</div>
+    </div>
+    <div class="btn-group">
+        <button class="btn btn-warning follow">关注</button>
+        <button class="btn btn-warning thumb">点赞</button>
+        <button class="btn btn-warning collection">收藏</button>
+    </div>
+</div>

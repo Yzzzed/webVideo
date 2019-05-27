@@ -1,0 +1,45 @@
+/*
+ * @Author: Yzed 
+ * @Date: 2019-02-23 22:30:19 
+ * @Last Modified by: Yzed
+ * @Last Modified time: 2019-05-15 07:49:03
+ */
+ 
+ /*导航主体*/
+ .nav-side{
+    float: left;
+    width: 130px;
+    min-height: 100px;
+ }
+ .nav-side .nav-item{
+    line-height: 25px;
+    font-size: 13px;
+    text-align: center;
+ }
+ .nav-side .nav-item .link{
+    color: #888;
+ }
+ .nav-side .nav-item.active{
+    color: #40a9ff !important;
+    background:#e6f7ff !important;
+    border: 1px #e6f7ff solid !important;
+}
+.nav-side .nav-item.active a{
+    color: #40a9ff !important;
+}
+
+/* 去除bootstrap某些默认样式 */
+.list-group-item{
+    border: none !important;
+}
+.list-group-item:hover{
+    cursor: pointer;
+    background:#e6f7ff !important;
+}
+.list-group-item:hover a{
+    color: #40a9ff !important;
+}
+
+.dropdown-menu li a {
+    text-align: center;
+}

@@ -1,0 +1,60 @@
+html{
+    font-size: 62.5%;
+}
+.header{
+    background: #fff;
+    height: 80px;
+    box-shadow: 0 5px 10px #ccc;
+    margin-bottom: 30px;
+ }
+ .header .logo-con a{
+    display: inline-block;
+ }
+.header .logo-con img{
+    display: inline-block;
+    height: 80px;
+}
+.header .logo-con .logo-word{
+    font-size: 19px;
+    font-weight: bolder;
+    color: #40a9ff; 
+}
+.header .search-con,.header .user-con{
+    height: 80px;
+}
+.header .user-con .login{
+    display: none;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+.header .user-con .login .dropdown{
+    position: absolute;
+    bottom: 0;
+    left: 60%;
+}
+
+.header .user-con .login .head-photo{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+}
+
+/* 去除一些bootstrap默认样式 */
+/* bootstrap3无垂直居中*/
+.header-vertical{
+    position: relative;
+    /* top: 50%; */
+    transform: translateY(65%);
+}
+.btn:focus{
+    outline: none !important;
+}
+#dropdown-menu{
+    position: absolute;
+    z-index: 9999;
+}
+.dropdown-menu li:hover{
+    cursor: pointer;
+}
+

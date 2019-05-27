@@ -1,0 +1,14 @@
+.list-group-item{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+h4{
+    margin-right: auto;
+    flex: 1;
+}
+.unfollow{
+    margin-left: auto;
+    flex: 1;
+}

@@ -1,0 +1,129 @@
+/* css reset */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background: #f6f6f6;
+    font: 1.2rem/1.5 tahoma,arial,Microsoft YaHei, sans_serif;
+}
+li{
+    list-style-type: none;
+}
+img{
+    display: block;
+    border: none;
+}
+label{
+    cursor: pointer;
+}
+input[type='checkbox']{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+
+
+/* panel */
+.panel{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #fff;
+    min-height: 250px;
+}
+.panel .panel-title{
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: #666;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+}
+.panel .panel-body{
+    padding: 1rem;
+    overflow: hidden;
+}
+
+ /* 全局通用样式 */
+
+ /* 隐藏类 */
+
+.hide{
+    display: none;
+}
+
+
+ /* 超链样式 */
+
+.link{
+    color: #999 !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+}
+.link:hover{
+    color: #40a9ff !important;
+}
+.link-text{
+    color: #999 !important;
+    text-decoration: none !important;
+}
+.err-tips{
+    font-size: 14px;
+    text-align: center;
+    color: #faad14;
+}
+/* loading */
+
+.loading{
+    margin: 1rem auto;
+    display: block;
+    width: 6.5rem;
+    height: 6.5rem;
+    border: 0.1rem solid #ddd;
+    border-radius: 0.5rem;
+    /* background: url('../../image/icon/loading.gif') no-repeat; */
+    opacity: 0.6;
+}
+
+/* 修改bootstrap */
+body{
+    position: relative;
+    z-index: -5;
+}
+.container-fluid{
+    position: relative;
+    z-index: -4;
+    overflow: hidden;
+}
+.container-z-index{
+    position: relative;
+    z-index: -4;
+    overflow: hidden;
+}
+.page-wrap{
+    position: relative;
+    z-index: -3;
+}
+.content{
+    position: relative;
+    z-index: -3;
+}
+.panel{
+    position: relative;
+    z-index: -2;
+}
+.panel .panel-title, .panel .panel-body{
+    position: relative;
+    z-index: -1;
+}
+.affix{
+    z-index: 99;
+}

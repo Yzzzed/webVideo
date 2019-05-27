@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- You should import html-head from layout/ here -->
+    <%= require('html-loader!./layout/html-head.html') %>
+    <!-- ********************************************* -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= htmlWebpackPlugin.options.title %> - webTop</title>
+</head>
+<body>
+    <div class="container-fluid affix flex-box">
+        <div class="top">
+            <div class="btn-group">
+                <button class="btn btn-default return">返回</button>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-default save">更新</button>
+            </div>
+        </div>
+    </div>
+    <div class="editor-con">
+        <div class="title-con">
+            <div class="input-group title">
+                <input type="text" class="form-control" placeholder="标题" id="title">
+            </div>
+        </div>
+        <div class="editor" id="editor">
+            
+        </div>
+    </div>
+    <%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>
