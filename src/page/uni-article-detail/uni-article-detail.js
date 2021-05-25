@@ -136,6 +136,7 @@ const page = {
         const _this = this
         const $panelHeading = $('.panel-heading')
         let detailHtml = ''
+        let playerHtml = ''
         const userId = data.user_id
         this.userId = userId
         // console.log("TCL: userId", userId)
@@ -149,14 +150,14 @@ const page = {
 
             detailHtml = _cmds.renderHtml(templateDetail, data)
             $panelHeading.html(detailHtml)
-            $con.html(data.content)
-            // console.log("TCL: $content", $content)
-            // console.log("TCL: $content.text()", $content.text())
-            _this.checkFollow()
-            _this.checkCollection()
-            _this.checkThumb()
+            playerHtml = _cmds.renderHtml(playerHtml, data)
+            $con.html(playerHtml)
+
+            // _this.checkFollow()
+            // _this.checkCollection()
+            // _this.checkThumb()
         }, errMsg => {
-            _cmds.errorTips('filter error')
+            _cmds.errorTips(errMsg)
         })
     },
     checkFollow: function(){

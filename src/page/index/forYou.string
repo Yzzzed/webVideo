@@ -1,19 +1,16 @@
 <div class="list-group">
     {{#list}}
-    <div class="list-group-item">
-        <a href="./uni-article-detail.html?id={{id}}">
-            <h3>{{title}}</h3>
-            <p>{{content}}...</p>
-        </a>   
-        <div class="article-msg">
-            <!-- <div class="author">{{user}}</div> -->
-            <div class="time">{{updateTime}}</div>
-            <!-- <div class="operation-btn">
-                <span class="btn btn-info like">点赞</span>
-                <span class="btn btn-info collect">收藏</span>
-            </div> -->
+    <a class="list-group-item" href="./uni-article-detail.html?id={{id}}">
+        <div class="player-container-item">
+            <video src="local:8080/ipfs/{{address}}" width="100%" controls="controls">
+                Your browser does not support video.
+            </video>
         </div>
-    </div>
+        <p>{{title}}</p>
+        <div>
+            <span>{{updateTime}}</span>
+        </div>
+    </a>
     {{/list}}
     {{^list}}
     <a class="list-group-item">

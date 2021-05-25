@@ -6,6 +6,7 @@
   "dependencies": {
     "font-awesome": "^4.7.0",
     "hogan": "^1.0.2",
+    "js-cookie": "^2.2.1",
     "simplemde": "^1.11.2",
     "wangeditor": "^3.1.1"
   },
@@ -28,7 +29,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "./node_modules/.bin/webpack-dev-server --inline --colors --open chrome",
+    "dev": "./node_modules/.bin/webpack-dev-server --inline --colors",
     "dist": "set WEBPACK_ENV=online&& webpack -p",
     "build": "webpack -d"
   },

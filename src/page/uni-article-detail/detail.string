@@ -24,8 +24,8 @@
         <div class="time">time: {{updateTime}}</div>
     </div>
     <div class="btn-group">
-        <button class="btn btn-warning follow">关注</button>
+        <!-- <button class="btn btn-warning follow">关注</button>
         <button class="btn btn-warning thumb">点赞</button>
-        <button class="btn btn-warning collection">收藏</button>
+        <button class="btn btn-warning collection">收藏</button> -->
     </div>
 </div>

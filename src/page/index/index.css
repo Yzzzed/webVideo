@@ -1,6 +1,7 @@
 body{
     position: relative;
     z-index: -5;
+    background: rgb(195,199,218);
 }
 .container-fluid{
     position: relative;
@@ -13,6 +14,10 @@ body{
 .hot-list .panel{
     position: relative;
     z-index: -2;
+}
+.player-container {
+    display: flex;
+    justify-content: center;
 }
 .article-msg{
     display: flex;
@@ -33,4 +38,20 @@ body{
 }
 .time{
     margin-left: auto;
+}
+
+.list-group {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.player-container-item {
+    
+}
+
+.card-list {
+    margin: 20px auto;
+    width: 70%;
 }

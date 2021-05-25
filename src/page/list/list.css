@@ -29,3 +29,7 @@ body{
 .time{
     margin-left: auto;
 }
+
+.list-group {
+    width: 100%;
+}

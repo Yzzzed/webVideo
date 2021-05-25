@@ -4,6 +4,7 @@ import _cmds from '../../util/cmds'
 import _index from '../../service/index-service'
 import templateSideBar from './sidebar.string'
 import templateForYou from './forYou.string'
+import templatePlayer from './player.string'
 import _articles from '../../service/articles-service';
 
 const page = {
@@ -32,10 +33,16 @@ const page = {
     loadForYou: function(){
         const _this = this
         const $panelBody = $('.panel-body')
+        const $hotList = $('.hot-list')
         _index.loadForYou(res => {
+            const first = res.list.shift()
+            console.log(first)
+            let player = ''
             let htmlForYou = ''
             htmlForYou = _cmds.renderHtml(templateForYou, res)
             $panelBody.html(htmlForYou)
+            player = _cmds.renderHtml(templatePlayer, first)
+            $hotList.html(player)
             // _this.filter(res)
         }, errMsg => {
             _cmds.errorTips(errMsg)

@@ -43,6 +43,7 @@ const page = {
     filter: function(data){
         const $panelHeading = $('.panel-heading')
         let detailHtml = ''
+        let playerHtml = ''
         const userId = data.user_id
         const $con = $('#con')
         _articles.getArticleAuthor({
@@ -51,16 +52,12 @@ const page = {
             data.user = res.username
             console.log("TCL: data", data)
             
-            // const $content = $(data.content)
-            // console.log("TCL: data.content", data.content)
-
             detailHtml = _cmds.renderHtml(templateDetail, data)
             $panelHeading.html(detailHtml)
-            $con.html(data.content)
-            // console.log("TCL: $content", $content)
-            // console.log("TCL: $content.text()", $content.text())
+            playerHtml = _cmds.renderHtml(playerHtml, data)
+            $con.html(playerHtml)
         }, errMsg => {
-            _cmds.errorTips('filter error')
+            _cmds.errorTips(errMsg)
         })
     }
 }

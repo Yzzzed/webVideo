@@ -49,6 +49,8 @@ const page = {
                 _this.userInfo.username = res.username
                 // window.location.href = _cmds.getUrlParam('redirect') || `./user-center.html?userid=${_this.userInfo.userid}&username=${_this.userInfo.username}`
                 window.location.href = _cmds.getUrlParam('redirect') || `./index.html`
+                localStorage.setItem('userid', res.id)
+                localStorage.setItem('username', res.username)
             }, (errMsg) => {
                 formError.show(errMsg)
             })

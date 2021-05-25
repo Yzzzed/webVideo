@@ -1,14 +1,21 @@
 <div class="list-group">
+    <div class="row">
     {{#list}}
-    <a href="./uni-article-detail.html?id={{id}}" class="list-group-item">
-        <h3>{{title}}</h3>
-        <p>{{content}}...</p>
-        <div class="article-msg">
-            <div class="author">{{author}}</div>
-            <div class="time">{{updateTime}}</div>
-        </div>
-    </a>
+    <div class="col-md-3">
+        <a class="list-group-item" href="./uni-article-detail.html?id={{id}}">
+            <div class="player-container-item">
+                <video src="local:8080/ipfs/{{address}}" width="100%" controls="controls">
+                    Your browser does not support video.
+                </video>
+            </div>
+            <p>{{title}}</p>
+            <div>
+                <span>{{updateTime}}</span>
+            </div>
+        </a>
+    </div>
     {{/list}}
+    </div>
     {{^list}}
     <a href="" class="list-group-item">
         <p class="err-tips">没有您的搜索结果~</p>

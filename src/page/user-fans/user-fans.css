@@ -1,6 +1,6 @@
 .list-group-item{
     display:flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
 }

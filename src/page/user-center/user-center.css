@@ -9,12 +9,30 @@
     text-align: right;
     color: #000 !important;
 }
-.user-info .photo{
-    width: 34px !important;
-}
 .info-edit-con{
     margin: 0 0 10px 0;
 }
 .user-update button{
     margin: 0 10px;
+}
+.user-info-con {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-info {
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.user-scoin {
+    display: flex;
+    flex-flow: column;
+}
+
+.nickname-modal {
+    height: 160px !important; 
 }

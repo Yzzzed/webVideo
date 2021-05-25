@@ -2,7 +2,7 @@
  * @Author: Yzed 
  * @Date: 2019-02-17 14:38:40 
  * @Last Modified by: Yzed
- * @Last Modified time: 2019-05-25 20:10:39
+ * @Last Modified time: 2021-05-25 15:25:44
  */
 
 const path = require('path')
@@ -64,7 +64,9 @@ const config = {
                 // target: 'http://192.168.43.181:8080',
                 // target: 'http://192.168.43.183:8080',
                 // target: 'http://172.20.10.5:8080',
-                target: 'https://blogs.wcytk.com',
+                // target: 'https://blogs.wcytk.com',
+                // target: 'http://localhost:8080/blogSystem_war',
+                target: 'http://wb.hyzed.cn:8080',
                 changeOrigin : true
             }
         }

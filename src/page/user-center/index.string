@@ -25,78 +25,55 @@
         <button class="btn btn-success">编辑</button>
     </div>
 </div> -->
-<div class="user-info">
+<div class="user-info-container">
     <div class="row user-info-con">
-        <div class="col-md-6">
-            <!-- <img src="../image/head-photo.jpg" alt=""> -->
-        </div>
-        <div class="col-md-6">   
-            <div class="form-line">
-                <span class="label">昵 称：</span>
-                <span class="text">{{neckname}}</span>
+        <div class="user-info">
+            <img class="ui avatar image tiny" src="../../image/head-photo.jpg">
+            <div class="user-id-detail">
+                <span>id: </span>
+                <span>{{detailId}}</span>
             </div>
-            <div class="form-line">
-                <span class="label">性 别：</span>
-                <span class="text">{{sex}}</span>
-            </div>
-            <div class="form-line">
-                <span class="label">生 日：</span>
-                <span class="text">{{birthday}}</span>
-            </div>
-            <div class="form-line">
-                <span class="label">地 区：</span>
-                <span class="text">{{place}}</span>
-            </div>
-            <div class="form-line">
-                <span class="label">签 名：</span>
-                <span class="text">{{personal_sign}}</span>
+            <div class="user-nickname-detail">
+                <span>昵称: </span>
+                <span>{{neckname}}</span>
+                <i class="edit icon" id="editNickname" style="cursor: pointer;"></i>
             </div>
         </div>
-    </div>
-    <div class="row info-edit-con hide">
-            <div class="col-md-6">
-                <!-- <img src="../image/head-photo.jpg" alt=""> -->
+        <div class="user-btn" style="width: 60%; text-align: center;">
+            <button class="ui icon red button" id="uploadBtn">
+                <i class="upload icon"></i>
+                上传视频
+            </button>
+        </div>
+        <div class="user-scoin">
+            <div class="scoin-count" style="text-align: center;">
+                <span>scoin:</span>
+                <span>9999</span>
             </div>
-            <div class="col-md-6">   
-                <div class="form-line">
-                    <!-- <span class="label">昵 称：</span> -->
-                    <!-- <span class="text">{{neckname}}</span> -->
-                    <div class="input-group">
-                        <span class="input-group-addon">昵 称</span>
-                        <input type="text" class="form-control" id="neckname" value="{{neckname}}">
-                    </div>
-                </div>
-                <div class="form-line">
-                    <div class="input-group">
-                        <span class="input-group-addon">性 别</span>
-                        <input type="text" class="form-control" id="sex" value="{{sex}}">
-                    </div>
-                </div>
-                <div class="form-line">
-                    <div class="input-group">
-                        <span class="input-group-addon">生 日</span>
-                        <input type="text" class="form-control" id="birthday" value="{{birthday}}">
-                    </div>
-                </div>
-                <div class="form-line">
-                    <div class="input-group">
-                        <span class="input-group-addon">地 区</span>
-                        <input type="text" class="form-control" id="place" value="{{place}}">
-                    </div>
-                </div>
-                <div class="form-line">
-                    <div class="input-group">
-                        <span class="input-group-addon">签 名</span>
-                        <input type="text" class="form-control" id="personal_sign" value="{{personal_sign}}">
-                    </div>
-                </div>
-            </div>
+            <button class="ui icon violet button" style="margin: 10px;">
+                <i class="shopping cart icon"></i>
+                获取更多
+            </button>
+            <button class="ui icon violet button" style="margin: 10px;">
+                <i class="dollar sign icon"></i>
+                出售scoin
+            </button>
+        </div>
     </div>
-    <div class="row user-edit">
-        <button class="btn btn-info col-md-1 col-md-push-8" id="user-info-edit">编辑</button>
+</div>
+<div class="ui mini modal nickname-modal">
+    <div class="header" style="height: 50px;">编辑昵称</div>
+    <div class="content">
+        <div class="ui input" style="width: 100%;">
+            <input type="text" placeholder="请输入更改后的昵称" class="" value="{{neckname}}" id="neckname">
+        </div>
     </div>
-    <div class="row user-update hide">
-        <button class="btn btn-info col-md-1 col-md-push-8" id="user-edit-finish">更新</button>
-        <button class="btn btn-info col-md-1 col-md-push-8" id="user-edit-quit">取消</button>
+    <div class="actions">
+        <div class="ui black deny button">
+        取消
+        </div>
+        <div class="ui positive right button" id="user-edit-finish">
+        确定
+        </div>
     </div>
 </div>

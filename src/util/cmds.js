@@ -3,7 +3,7 @@ import Hogan from 'hogan.js'
 
 
 const conf = {
-    serverHost: ''
+    serverHost: '/blogSystem'
 }
 const stConf = {
     status: 'code',
@@ -19,7 +19,7 @@ const _cmds = {
     request: function(param){
         
         const _this = this    //this指向问题 重点注意 此处定义_this为了取到_cmds对象
-
+        
         $.ajax({
             type: param.method || "get",
             url: param.url || "",
@@ -35,7 +35,7 @@ const _cmds = {
                 /*判断是否请求成功 对请求数据进行封装*/
 
                 //请求成功
-
+                console.log('ajaxHeader---', res)
                 if(res[stConf.status] === stConf.successStatus){
                     typeof param.success === 'function' && param.success(res.data, res.msg)
                 }

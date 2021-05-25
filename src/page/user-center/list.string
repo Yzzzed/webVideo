@@ -1,0 +1,15 @@
+{{#list}}
+  <div class="list-group-item col-md-3">
+    <a href="./uni-article-detail.html?id={{id}}">
+      <div class="player-container-item">
+        <video src="local:8080/ipfs/{{address}}" width="100%" controls="controls">
+            Your browser does not support video.
+        </video>
+      </div>
+      <div class="meta">{{title}}</div>
+    </a>
+  </div>
+{{/list}}
+{{^list}}
+  <p class="err-tips">你还没有上传视频~</p>
+{{/list}}

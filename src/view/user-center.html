@@ -6,25 +6,41 @@
     <!-- ********************************************* -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%= htmlWebpackPlugin.options.title %> - webTop</title>
+    <title><%= htmlWebpackPlugin.options.title %> - ELIVE</title>
 </head>
 <body>
     <%= require('html-loader!./layout/header.html') %>
     <div class="container container-z-index">
         <ul class="breadcrumb row">
-            <li><a href="./index.html" class="link">WebTop</a></li>
+            <li><a href="./index.html" class="link">ELIVE</a></li>
             <li></li><span class="link-text"><%= htmlWebpackPlugin.options.title %></span></li>
         </ul>
         <div class="page-wrap row">
-            <%= require('html-loader!./layout/nav-side.html') %>
-            <div class="content col-md-9">
+            <!-- <%= require('html-loader!./layout/nav-side.html') %> -->
+            <div class="content col-md-12">
                 <div class="panel">
                     <div class="panel-title">个人中心</div>
-                    <div class="panel-body">
+                    <div class="panel-body" id="panel-body">
                         
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row">
+            <div class="panel">
+                <div class="panel-title">我的视频</div>
+                <div class="panel-body" id="user-video-card">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui modal upload-modal" style="height: 530px;">
+        <div class="header">
+            上传视频
+        </div>
+        <div class="content">
+            <input type="file" id="videofile" name="video" multiple />
         </div>
     </div>
     <%= require('html-loader!./layout/footer.html') %>
