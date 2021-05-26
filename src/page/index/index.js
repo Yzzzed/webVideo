@@ -13,6 +13,11 @@ const page = {
         this.bindEvent()
     },
     bindEvent: function(){
+        // $('#index-player').on('click', '#index-player',() => {
+        //     console.log('-----click-----')
+        //     const player = videojs('ipfs-streaming-video')
+        //     player.play()
+        // })
         
     },
     onload: function(){
@@ -43,6 +48,7 @@ const page = {
             $panelBody.html(htmlForYou)
             player = _cmds.renderHtml(templatePlayer, first)
             $hotList.html(player)
+            // this.loadPlayer(first.address)
             // _this.filter(res)
         }, errMsg => {
             _cmds.errorTips(errMsg)
@@ -65,6 +71,19 @@ const page = {
     //     })
         
     // }
+    loadPlayer: function (url) {
+        const target = document.querySelector('#index-player')
+        const sources = {
+            hd: {
+              play_url: `https://zhstatic.zhihu.com/cfe/griffith/zhihu2018_hd.mp4`,
+            },
+            sd: {
+              play_url: `https://zhstatic.zhihu.com/cfe/griffith/zhihu2018_hd.mp4`,
+            },
+        }
+        const player = Griffith.createPlayer(target)
+        player.render({sources})
+    }
 }
 
 $(function(){

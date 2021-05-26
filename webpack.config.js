@@ -65,8 +65,8 @@ const config = {
                 // target: 'http://192.168.43.183:8080',
                 // target: 'http://172.20.10.5:8080',
                 // target: 'https://blogs.wcytk.com',
-                // target: 'http://localhost:8080/blogSystem_war',
-                target: 'http://wb.hyzed.cn:8080',
+                target: 'http://localhost:8079',
+                // target: 'http://wb.hyzed.cn:8080',
                 changeOrigin : true
             }
         }
@@ -173,6 +173,7 @@ const config = {
         new HtmlWebpackPlugin(getHtmlConfig('article-update', '编辑文章')),
         new HtmlWebpackPlugin(getHtmlConfig('article-detail', '文章详情')),
         new HtmlWebpackPlugin(getHtmlConfig('uni-article-detail', '文章详情')),
+        new HtmlWebpackPlugin(getHtmlConfig('player', '播放测试')),
     ]
 }
 

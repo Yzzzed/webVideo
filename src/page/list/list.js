@@ -11,7 +11,7 @@ const page = {
         listParam: {
             search: _cmds.getUrlParam('keyword') || '',
             pageNum: _cmds.getUrlParam('pageNum') || 1,
-            pageSize: _cmds.getUrlParam('pageSize') || 5,
+            pageSize: _cmds.getUrlParam('pageSize') || 6,
             currentPage: _cmds.getUrlParam('currentPage') || 1
         }
     },

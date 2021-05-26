@@ -2,7 +2,7 @@
     {{#list}}
     <a class="list-group-item" href="./uni-article-detail.html?id={{id}}">
         <div class="player-container-item">
-            <video src="local:8080/ipfs/{{address}}" width="100%" controls="controls">
+            <video src="http://127.0.0.1:8080/ipfs/{{address}}" width="100%" controls="controls">
                 Your browser does not support video.
             </video>
         </div>
