@@ -5,6 +5,7 @@ import _index from '../../service/index-service'
 import _articles from '../../service/articles-service'
 import templateSideBar from './sidebar.string'
 import templateDetail from './detail.string'
+import templatePlayer from './player.string'
 import _user from '../../service/user-service'
 
 const page = {
@@ -138,6 +139,7 @@ const page = {
         let detailHtml = ''
         let playerHtml = ''
         const userId = data.user_id
+        data.poster = _cmds.randomImg()
         this.userId = userId
         // console.log("TCL: userId", userId)
         const $con = $('#con')
@@ -150,7 +152,7 @@ const page = {
 
             detailHtml = _cmds.renderHtml(templateDetail, data)
             $panelHeading.html(detailHtml)
-            playerHtml = _cmds.renderHtml(playerHtml, data)
+            playerHtml = _cmds.renderHtml(templatePlayer, data)
             $con.html(playerHtml)
 
             // _this.checkFollow()

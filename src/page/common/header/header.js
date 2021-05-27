@@ -54,7 +54,7 @@ const header = {
         })
         $('#myArticle').click(() => {
             // window.location.href = `./user-article.html?id=${_this.userInfo.id}`
-            window.location.href = `./user-article.html`
+            window.location.href = `./user-center.html`
         })
         $('#myCollection').click(() => {
             // window.location.href = `./user-collection.html?id=${_this.userInfo.id}`

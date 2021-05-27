@@ -41,6 +41,7 @@ const page = {
         const $hotList = $('.hot-list')
         _index.loadForYou(res => {
             const first = res.list.shift()
+            first.poster = _cmds.randomImg()
             console.log(first)
             let player = ''
             let htmlForYou = ''

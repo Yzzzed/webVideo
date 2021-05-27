@@ -42,3 +42,9 @@ body{
 .all-msg .btn-group{
     margin-left: auto;
 }
+
+#con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
