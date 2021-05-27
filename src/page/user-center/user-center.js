@@ -80,9 +80,12 @@ const page = {
         let videoHtml = ''
         const $videoCard = $('#user-video-card')
         _articles.loadMyArticles({},(res) => {
-            console.log('res', res)
+            res.list.map(item => {
+                item.poster = _cmds.randomImg()
+                return item
+            })
             videoHtml = _cmds.renderHtml(templateVideoList, res)
-            console.log(videoHtml)
+
             $videoCard.html(videoHtml)
         }, (errMsg) => {
             console.log(errMsg)

@@ -19,6 +19,14 @@ body{
     display: flex;
     justify-content: center;
 }
+.player-title {
+    font-size: 24px;
+    color: #000;
+}
+.player-title:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
 .article-msg{
     display: flex;
     align-items: center;

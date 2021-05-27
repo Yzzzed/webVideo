@@ -30,6 +30,10 @@ const page = {
         // $listCon.html('<div class="loading"></div>')
 
         _articles.getArticleList(listParam, res => {
+            res.list.map(item => {
+                item.poster = _cmds.randomImg()
+                return item
+            })
             listHtml = _cmds.renderHtml(templateList, {
                 list: res.list
             })

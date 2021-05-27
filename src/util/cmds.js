@@ -12,6 +12,18 @@ const stConf = {
     failedStatus: 1
 }
 
+const imgList = [
+    'https://image.hyzed.cn/blog/484bcf1ca4d77859e911dc5c6e3a78c7.jpg',
+    'https://image.hyzed.cn/blog/157c59376b0940958ff76bcac35d9192.jpg',
+    'https://image.hyzed.cn/blog/22c0ffa38e72420452759edc8d35ae9c.png',
+    'https://image.hyzed.cn/blog/267b3dae70ac7916702076b3d11929d3.jpg',
+    'https://image.hyzed.cn/blog/286a676a8b4bf58346d8153e8281ad14.jpg',
+    'https://image.hyzed.cn/blog/3ba7f0825efe8230412124fcde8b46a4.jpg',
+    'https://image.hyzed.cn/blog/77ec47fc3360c48a41536ab743bbb0b7.jpg',
+    'https://image.hyzed.cn/blog/854228c4042b6b3c8e980fe36c4826fc.jpg',
+    'https://image.hyzed.cn/blog/ce7b449cc55b96e90c36abf0b8b20869.png',
+]
+
 const _cmds = {
 
     //网络请求
@@ -115,6 +127,9 @@ const _cmds = {
     },
     goLogin: function(){
         window.location.href = `./user-login.html?redirect=${encodeURIComponent(window.location.href)}`
+    },
+    randomImg: function() {
+        return imgList[Math.floor(Math.random() * imgList.length)]
     }
 }
 

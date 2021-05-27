@@ -2,7 +2,7 @@
   <div class="list-group-item col-md-3 col-sm-3">
     <a href="./uni-article-detail.html?id={{id}}">
       <div class="player-container-item">
-        <video src="http://127.0.0.1:8080/ipfs/{{address}}" width="100%" controls="controls">
+        <video src="http://127.0.0.1:8080/ipfs/{{address}}" width="100%" controls="controls" poster="{{poster}}">
             Your browser does not support video.
         </video>
       </div>

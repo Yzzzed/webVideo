@@ -4,7 +4,7 @@
     <div class="col-md-4 col-sm-4">
         <a class="list-group-item" href="./uni-article-detail.html?id={{id}}">
             <div class="player-container-item">
-                <video src="http://127.0.0.1:8080/ipfs/{{address}}" width="100%" controls="controls">
+                <video class="video-js" src="http://127.0.0.1:8080/ipfs/{{address}}" width="100%" controls="controls" preload="auto" poster="{{poster}}" >
                     Your browser does not support video.
                 </video>
             </div>

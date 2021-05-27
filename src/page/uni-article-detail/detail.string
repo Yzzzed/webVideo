@@ -1,6 +1,6 @@
 <!-- <div class="panel panel-warning">
     <div class="panel-heading">
-        <h4>{{title}}</h4>
+        <h2>{{title}}</h2>
         <div class="all-msg">
             <div class="article-msg">
                 <div class="author">author: {{user}}{{error}}</div>
@@ -17,7 +17,7 @@
         
     </div>
 </div> -->
-<h4>{{title}}</h4>
+<h2 style="text-align: center; font-size: 20px;">{{title}}</h2>
 <div class="all-msg">
     <div class="article-msg">
         <div class="author">author: {{user}}</div>
