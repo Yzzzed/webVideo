@@ -4,7 +4,7 @@ const _index = {
     //加载为您推荐
     loadForYou: function(resolve, reject){
         _cmds.request({
-            url: _cmds.getServerUrl('/view/articles.do'),
+            url: _cmds.getServerUrl('/view/videos.do'),
             // url: _cmds.getServerUrl('/api/index/loadForYou.do'),
             method: 'POST',
             success: resolve,

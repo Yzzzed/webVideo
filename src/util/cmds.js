@@ -3,7 +3,7 @@ import Hogan from 'hogan.js'
 
 
 const conf = {
-    serverHost: '/blogSystem'
+    serverHost: ''
 }
 const stConf = {
     status: 'code',

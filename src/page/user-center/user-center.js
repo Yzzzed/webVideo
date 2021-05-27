@@ -92,8 +92,8 @@ const page = {
     uploadInit: function () {
         $('#videofile').fileinput({
             language: 'zh', //设置语言
-            uploadUrl: '/xxxxx.do', //上传的地址
-            allowedFileExtensions: ['jpg', 'gif', 'png'],//接收的文件后缀
+            uploadUrl: '/center/addVideo.do', //上传的地址
+            allowedFileExtensions: ['mp4', 'rmvb', 'avi', 'mkv', 'flv', 'mov'],//接收的文件后缀
             showUpload: true, //是否显示上传按钮
             showCaption: false,//是否显示标题
             browseClass: "btn btn-primary", //按钮样式     
